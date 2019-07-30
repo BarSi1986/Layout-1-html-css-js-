@@ -35,6 +35,23 @@ nav{
 nav:hover{
     opacity: 1;
 }
+.logo{
+    font-size: 2.5em;
+    line-height: 75px;
+    position: absolute;
+    left: 3%;
+    cursor: pointer;
+}
+
+.logo a:hover{
+    color: #10c9c3;
+}
+
+.logo a{
+    text-decoration: none;
+    transition: .3s;
+    color: #000;
+}
 
 nav ul li a{
     text-decoration: none;
@@ -72,19 +89,7 @@ header{
     left: 0;
     opacity: 1;
 }
-.logo{
-    position: fixed;
-    left: 2%;
-    height: 75px;
-    font-size: 3.5em;
-}
-.logo a{
-    color: black;
-    transition: .2s;
-}
-.logo a:hover{
-    color: #10c9c3;
-}
+
 .heroTxt{
     position: absolute;
     font-family: 'Darker Grotesque', sans-serif;
