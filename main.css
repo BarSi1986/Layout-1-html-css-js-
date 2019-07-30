@@ -1,0 +1,727 @@
+@import url('https://fonts.googleapis.com/css?family=Darker+Grotesque:500&display=swap');
+
+@import url('https://fonts.googleapis.com/css?family=Monsieur+La+Doulaise&display=swap');
+
+*{
+    margin: 0 auto;
+    padding: 0;
+    box-sizing: border-box;
+    max-width: 2200px;
+}
+
+
+
+nav ul li{
+    list-style: none;
+    margin: 10px;
+    display: block;
+    cursor: pointer;
+    font-family: 'Darker Grotesque', sans-serif;
+    
+}
+nav{
+    position: fixed;
+    height: 75px;
+    width: 100%;
+    z-index: 9;
+}
+.navScrolled{
+    background-color: #f5f5f5;
+    opacity: 0.5;
+    font-size: .9em;
+    transition: .2s;
+}
+
+nav:hover{
+    opacity: 1;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    transition: .2s;
+    font-size: 1.3em;
+}
+nav ul li a:hover{
+    color: #10c9c3;
+    text-shadow: 0 0 35px #10c9c3;
+}
+nav ul{
+    display: flex;
+    position: fixed;
+    top: 2%;
+    right: 10%;
+    z-index: 10;
+}
+
+header{
+    position: relative;
+    height: 90vh;
+}
+
+.hero::after{
+    content: "";
+    background-image: url('img/hero.jpg');
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    top: 0;
+    left: 0;
+    opacity: 1;
+}
+.logo{
+    position: fixed;
+    overflow: hidden;
+    top: 3%;
+    left: 5%;
+    transform: scale(3.5);
+}
+.logo a{
+    color: black;
+    transition: .2s;
+}
+.logo a:hover{
+    color: #10c9c3;
+}
+.heroTxt{
+    position: absolute;
+    font-family: 'Darker Grotesque', sans-serif;
+    width: 20%;
+    right: 10%;
+    bottom: 35%;
+    text-align: left;
+}
+.heroTxt h1{
+    margin-bottom: 5px;
+}
+.heroTxt p{
+    font-size: 1.2em;
+    color: rgb(95, 95, 95);
+}
+.heroTxt button{
+    background-color: #10c9c3;
+    border: none;
+    font-size: 1em;
+    
+    letter-spacing: 1px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .2s;
+}
+.heroTxt button a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 20px;
+}
+
+.heroTxt button:hover{
+    box-shadow: 0 0 25px #10c9c3;
+}
+
+/* section about */
+
+#about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* width: 80vw; */
+    height: 40vh;
+    font-family: 'Darker Grotesque', sans-serif;
+    margin: 50px;
+}
+#about h1{
+    font-size: 2em;
+}
+
+#about p:nth-of-type(1){
+    text-align: center;
+    margin: 15px 0;
+    color: rgb(95, 95, 95);
+    font-size: 1.2em;
+    width: 50%;
+}
+#about p:nth-of-type(2){
+    font-size: 1.8em;
+    font-family: 'Monsieur La Doulaise', cursive;
+    margin-top: 15px;
+    margin-bottom: 10px;
+}
+
+
+#skill{
+    display: flex;
+    height: 50vh;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Darker Grotesque', sans-serif;
+}
+
+.skills{
+    width: 50vw;
+    height: 100%;
+    background-color: #f9f9f9;
+    color: rgb(95, 95, 95);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.skills div{
+    width: 35vw;
+}
+.skills h1{
+    color: black;
+    font-size: 2em;
+    width: 35vw;
+    margin-bottom: 40px;
+}
+.skills p{
+    font-size: 1.2em;
+}
+
+.skillsPic{
+    background-image: url(img/services1.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 100%;
+    width: 50vw;
+}
+
+.prog1, .prog2, .prog3{
+    height: 8px;
+    background-color: rgb(192, 192, 192);
+    margin: 20px 0px;
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.prog1 div{
+    height: 100%;
+    width: 75%;
+    background-color: #10c9c3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transform: translateX(-110%);
+}
+.prog2 div{
+    height: 100%;
+    width: 90%;
+    background-color: #10c9c3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transform: translateX(-110%);
+}
+.prog3 div{
+    height: 100%;
+    width: 65%;
+    background-color: #10c9c3;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    transform: translateX(-110%);
+    
+}
+
+@keyframes progress-animation{
+    100%{transform: translateX(0%)}
+}
+
+
+.animate{
+     animation: progress-animation 1.5s both;
+}
+
+#process{
+    background-color: #10c9c3;
+    height: 30vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.2em;
+    padding: 0 200px;
+}
+.achievements{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#process div i{
+    font-size: 1.5em;
+    margin: 2vw;
+}
+
+#work{
+ display: flex;
+ flex-wrap: wrap;
+}
+
+#work div{
+    width: 20%;
+    flex-basis: 25%;
+    position: relative;
+    z-index: 0;
+    background-color: #000;
+    overflow: hidden;
+}
+#work img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    position: relative;
+    z-index: 2; 
+}
+#work div i{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: white;
+    z-index: 1;
+}
+
+#work img:hover{
+    opacity: .2;
+    transform: scale(1.1);
+    transition: .3s;
+}
+
+
+
+.moreWork{
+    height: 10vh;
+    line-height: 10vh;
+    text-align: center;
+    font-family: 'Darker Grotesque', sans-serif;
+    color: rgb(95, 95, 95);
+    font-size: 1.4em;
+    cursor: pointer;
+    transition: .6s;
+    position: relative;
+    background-color: #f9f9f9;
+}
+.moreWork::after{
+    content: "LOAD MORE WORK";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#f9f9f9, #0f0f0f);
+    opacity: 0;
+    transition: .6s;
+}
+.moreWork p{
+    text-align: center;
+}
+
+.moreWork:hover:after {
+    opacity: 1;
+    color: rgb(209, 209, 209);
+}
+
+
+#testemonials{
+    height: 50vh;
+    background-color: #10c9c3;
+    background: linear-gradient(#10c9c3, #10c9c3, #f5f5f5);
+    color: white;
+    font-family: 'Darker Grotesque', sans-serif;
+    position: relative;
+}
+#testemonials i{
+  position: absolute;  
+  font-size: 2em;
+  cursor: pointer;
+  z-index: 5;
+  transition: .2s;
+  padding: 20px;
+}
+
+#testemonials i:hover{
+    color: rgb(179, 179, 179);
+}
+
+#testemonials i:nth-of-type(1){
+    top: 50%;
+    transform: translate(-25%, -50%);
+    left: 25%;
+}
+#testemonials i:nth-of-type(2){
+    top: 50%;
+    transform: translate(-25%, -50%);
+    right: 25%;
+
+}
+.carousel{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 30%;
+    position: relative;
+    overflow: hidden;
+}
+
+.slider{
+    display: flex;
+    transition: .5s;
+    text-align: center;
+    position: absolute;
+    width: 300%;
+    padding: 10px;
+    letter-spacing: 2px;
+    font-weight: 100;
+
+}
+
+
+.slider section{
+    width: 100%;
+    margin: 20px;
+}
+.slider section p{
+    margin: 15px;
+}
+
+.control ul{
+    display: flex;
+    width: 4%;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 15%;
+    z-index: 5;
+}
+
+.control ul li{
+    width: 10px;
+    height: 10px;
+    border: 1px solid white;
+    border-radius: 50%;
+    list-style: none;
+    cursor: pointer;
+}
+
+.control ul li.selected{
+    background-color: #fff;
+}
+
+#contact{
+    padding-top: 100px;
+    height: 90vh;
+    background-color: #f5f5f5;
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: 1.5em;
+    display: flex;
+    flex-direction: column;
+}
+
+#contact form{
+    display: flex;
+    flex-direction: column;
+    width: 45vw;
+    margin-top: 4%;
+    
+}
+#contact form div{
+    display: flex;
+    width: 100%;
+    position: relative;
+    margin-bottom: 70px;
+}
+
+#contact form div input:nth-of-type(1){
+    position: absolute;
+    width: 45%;
+    top: 0;
+    left: 0;
+
+}
+#contact form div input:nth-of-type(2){
+    position: absolute;
+    width: 45%;
+    top: 0;
+    right: 0;
+}
+
+form button{
+    margin-top: 30px;
+    background-color: #10c9c3;
+    padding: 20px;
+    border: none;
+    color: white;
+    transition: .2s;
+    cursor: pointer;
+    font-size: .6em;
+}
+form button:hover{
+    box-shadow: 0 0 25px #10c9c3;
+}
+
+form input{
+    border: none;
+    padding: 20px;
+    color: rgb(95, 95, 95);
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: .8em;
+}
+textarea{
+    border: none;
+    padding: 20px;
+    color: rgb(95, 95, 95);
+    font-family: 'Darker Grotesque', sans-serif;
+    font-size: .8em;
+}
+
+
+#title{
+    margin-top: 20px;
+    width: 100%;
+}
+#message{
+    width: 100%;
+    height: 20vh;
+    margin-top: 20px;
+}
+
+#contact p{
+    margin-top: 20px;
+    color: rgb(95, 95, 95);
+    width: 45vw;
+    text-align: center;
+}
+
+#footer{
+    background-color: #141414;
+    height: 30vh;
+}
+
+/* hamburger menu */
+
+.burger{
+    position: fixed;
+    width: 35px;
+    z-index: 20;
+    top: 3%;
+    right: 5%;
+    cursor: pointer;
+    transition: .2s;
+    display: none;
+}
+.burger:hover{
+    color: #10c9c3;
+}
+.burger div{
+    border: 2px solid;
+    width: 90%;
+    margin: 5px;
+    border-radius: 200px;
+    transition: .4s;
+
+}
+
+.burger.clicked div:nth-of-type(1){
+    transform: rotate(-45deg) translate(-33%, -130%);
+}
+.burger.clicked div:nth-of-type(2){
+    opacity: 0;
+}
+.burger.clicked div:nth-of-type(3){
+    transform: rotate(45deg) translate(-56%, -58%);
+}
+
+
+
+/* media queries !!!!!!!!! */
+
+
+
+@media (max-width: 950px){
+    .burger{
+        display: block;;
+    }
+    nav ul{
+        position: fixed;
+        background-color: #fff;
+        width: 100vw;
+        right: 0%;
+        top: 0%;
+        height: 100vh;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: translateY(100%);
+        transition: .5s;
+    }
+
+    nav ul li{
+        margin: 20px;
+    }
+
+    .active{
+        transform: translateY(0%);
+        z-index: 60;
+        
+    }
+    .navScrolled{
+        opacity: 1;
+        background-color: rgba(255, 255, 255, 0);
+    }
+    .logo{
+        z-index: 100;
+        top: 4%;
+        left: 9%;
+    }
+    header{
+        height: 100vh;
+    }
+
+    .hero::after{
+        background-image: url('img/hero-mobile.jpg');
+        filter: blur(5px);
+    }
+
+    .heroTxt{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        width: 70%;
+        right: 50%;
+        bottom: 50%;
+        transform: translate(50%, 40%);
+    }
+  
+    .heroTxt button{
+        margin-top: 10%;
+    }
+    
+    #about{
+        height: 35vh;
+        margin: 120px 0px;
+    }
+
+    #about p:nth-of-type(1){
+        text-align: center;
+        margin: 15px 0;
+        color: rgb(95, 95, 95);
+        font-size: 1.1em;
+        width: 70%;
+    }
+    #about p:nth-of-type(2){
+        font-size: 1.4em;
+        margin-top: 0px;
+    }
+
+    #skill{
+        display: flex;
+        height: 50vh;
+        justify-content: space-around;
+        align-items: center;
+        font-family: 'Darker Grotesque', sans-serif;
+    }
+    
+    .skills{
+        width: 100vw;
+        background-image: url(img/services1-mobile.jpg);
+        background-position: left;
+        background-size: cover;
+    }
+    .skills div{
+        width: 75vw;
+        text-align: center;
+    }
+    .skills h1{
+        color: black;
+        font-size: 1.7em;
+        width: 75vw;
+        margin-bottom: 5px;
+        text-align: center;
+
+    }
+    .skills p{
+        font-size: 1.2em;
+    }
+    
+    .skillsPic{
+        display: none;
+    }
+    .prog1 div{
+        width: 75%;
+    }
+    .prog2 div{
+        width: 90%;
+    }
+    .prog3 div{
+        width: 65%; 
+    }
+    #process{
+        height: 90vh;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 0px;
+        text-align: center;
+    }
+    .achievements{
+        flex-direction: column;
+    }
+
+
+
+    #testemonials{
+        height: 70vh;
+    }
+    #testemonials i{
+      padding: 10px;
+    }
+    
+    #testemonials i:nth-of-type(1){
+        left: 5%;
+        top:40%;
+    }
+    #testemonials i:nth-of-type(2){
+        right: 5%;
+        top:40%;
+    }
+    .carousel{
+        width: 75%;
+    }
+    
+    .slider section p{
+        margin: 15px;
+    }
+    
+    .control ul{
+        display: none;
+    }
+    #contact{
+        padding-top: 50px;
+        height: 100vh;
+    }
+    
+    #contact form{
+        width: 85vw;
+    }
+    #contact p{
+        width: 75vw;
+    }
+
+
+
+@media (max-width: 700px){
+    #work div{
+        flex-basis: 50%;
+    }
+}
