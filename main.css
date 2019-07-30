@@ -74,10 +74,9 @@ header{
 }
 .logo{
     position: fixed;
-    overflow: hidden;
-    top: 3%;
-    left: 5%;
-    transform: scale(3.5);
+    left: 2%;
+    height: 75px;
+    font-size: 3.5em;
 }
 .logo a{
     color: black;
