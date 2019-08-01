@@ -341,7 +341,7 @@ header{
 #testemonials{
     height: 50vh;
     background-color: #10c9c3;
-    background: linear-gradient(#10c9c3, #10c9c3, #f5f5f5);
+    background: linear-gradient(#10c9c3, #10c9c3, #f0ecec);
     color: white;
     font-family: 'Darker Grotesque', sans-serif;
     position: relative;
@@ -426,7 +426,7 @@ header{
 #contact{
     padding-top: 100px;
     height: 90vh;
-    background-color: #f5f5f5;
+    background-color: #f0ecec;
     font-family: 'Darker Grotesque', sans-serif;
     font-size: 1.5em;
     display: flex;
